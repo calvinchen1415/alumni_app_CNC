@@ -1,0 +1,7 @@
+FROM python
+MAINTAINER Calvin
+ADD . /python-app/alumni_app_CNC
+WORKDIR /python-app/alumni_app_CNC
+RUN pip install -r requirement.txt
+ENTRYPOINT ["python"]
+CMD ["app.py"]
